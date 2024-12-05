@@ -22,6 +22,7 @@ jobs:
   say-hello:
     needs: lint-yaml
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
       - name: Get repository name and date
         run: |
